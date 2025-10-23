@@ -1,4 +1,54 @@
+
 .wrapper {
-    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+#mobile-menu.show {
+    display: block !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0 0.5rem;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .bg-green-600 {
+        padding-top: 1rem;
+    }
+    
+    .bg-green-600 .wrapper {
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wrapper {
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        max-width: 1400px;
+    }
 }
